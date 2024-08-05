@@ -69,8 +69,20 @@
     justify-content: center;
     margin: auto;
   }
+
+  @media screen and (min-width: 920px) {
+    #right {
+      position: relative;
+      height: 100%;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      margin: auto 50%;
+    }
+  }
+
   #formmain{
-    background-color: white;
+    background-color: '#00000066';
     border-radius: 20px;
     padding: 20px;
     width: 80%;

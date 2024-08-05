@@ -44,15 +44,7 @@ const TransactionTable = props => {
         backgroundColor: '#2c2c2c',
         color: '#ffffff'
       }
-    },
-    {
-      dataField: 'customer name',
-      text: 'Name',
-      headerStyle: {
-        backgroundColor: '#2c2c2c',
-        color: '#ffffff'
-      }
-    },
+    },    
     {
       dataField: 'username',
       text: 'username',
@@ -133,8 +125,8 @@ const TransactionTable = props => {
       {props => (
         <div>
           <div className='d-flex justify-content-between align-items-center'>
-            <MyExportCSV {...props.csvProps} />
-            <SearchBar {...props.searchProps} />
+            {/* <MyExportCSV {...props.csvProps} /> */}
+            {/* <SearchBar {...props.searchProps} /> */}
           </div>
           <BootstrapTable
             striped
@@ -177,9 +169,9 @@ const MyExportCSV = props => {
   }
   return (
     <div align='d-flex'>
-      <Button className='btn' color='success' onClick={handleClick}>
+      {/* <Button className='btn' color='success' onClick={handleClick}>
         Export to CSV
-      </Button>
+      </Button> */}
       {decrypt(localStorage.getItem('role')) == 'customer' && (
         <Link
           className='btn btn-primary ml-3'

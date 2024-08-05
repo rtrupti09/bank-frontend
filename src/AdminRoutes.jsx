@@ -1,5 +1,4 @@
 import Login from 'Login.jsx'
-import dashboard_icon from 'img/dashboard_menu_icon.png'
 import billing from 'img/billing.png'
 import red_logout from 'img/redlogout.png'
 import Transaction from 'views/Transaction/Transaction'
@@ -9,7 +8,7 @@ var AdminRoutes = [
   {
     path: '/transaction',
     name: 'Transaction',
-    icon: billing,
+    // icon: billing,
     component: Transaction,
     layout: '/admin',
     sub_menu: []
@@ -25,7 +24,7 @@ var AdminRoutes = [
   {
     // path: "/",
     name: 'Logout',
-    icon: red_logout,
+    // icon: red_logout,
     component: Login,
     layout: '/sign-in',
     sub_menu: []

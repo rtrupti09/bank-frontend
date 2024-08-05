@@ -45,7 +45,7 @@ const Admin = props => {
       />
 
       <div className='main-panel' ref={mainPanelRef}>
-        <DemoNavbarAdmin {...props} routes={AdminRoutes} />
+        {/* <DemoNavbarAdmin {...props} routes={AdminRoutes} /> */}
         <Switch>
           {AdminRoutes.map((prop, key) => (
             <Route

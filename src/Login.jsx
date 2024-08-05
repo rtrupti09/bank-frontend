@@ -104,7 +104,7 @@ const Login = () => {
               autoComplete="off"
               onSubmit={loginRequest}
             >
-              <div style={{ display: "flex", justifyContent: "center" }}>
+              <div className="mb-3" style={{ display: "flex", justifyContent: "center" }}>
                 <img
                   src={banklogo}
                   className="img-fluid"
@@ -112,26 +112,8 @@ const Login = () => {
                   style={{ maxWidth: "100px" }}
                 ></img>
                 <br />
-              </div>
-              <marquee>
-                <Label
-                  id="label"
-                  style={{
-                    fontSize: "20px",
-                    display: "flex",
-                    justifyContent: "center",
-                    textAlign: "center",
-                    color: "#000000",
-                    marginBottom: "20px",
-                  }}
-                >
-                  Welcome To{" "}
-                  <span style={{ color: "#ff5c5c", paddingLeft: "7px" }}>
-                    {" "}
-                    Banking App
-                  </span>
-                </Label>
-              </marquee>
+                <br />
+              </div>              
               <div
                 className="group"
                 style={{

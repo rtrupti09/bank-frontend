@@ -36,7 +36,7 @@ const SubUser = props => {
       />
 
       <div className='main-panel' ref={mainPanel}>
-        <DemoNavbarSubUser {...props} routes={SubUserRoutes} />
+        {/* <DemoNavbarSubUser {...props} routes={SubUserRoutes} /> */}
         <Switch>
           {SubUserRoutes.map((prop, key) => (
             <Route
